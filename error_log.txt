@@ -1,1 +1,15 @@
+Task 4 — Logging to File
+
+Triggering ConnectionError...
+
+Connection failed. Please check your internet.
+
+Triggering HTTP 404...
+
+Product not found.
+
+Error Log Contents:
+
+[2026-03-31 12:32:23.606524] ERROR in fetch_products: ConnectionError — HTTPSConnectionPool(host='this-host-does-not-exist-xyz.com', port=443): Max retries exceeded with url: /api (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7bb8689adb50>: Failed to resolve 'this-host-does-not-exist-xyz.com' ([Errno -2] Name or service not known)"))
+[2026-03-31 12:32:23.853856] ERROR in lookup_product: HTTPError — 404 Not Found for product ID 999
 
